@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://AlbertBowen.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://albertbowen.github.io/sitemap.xml
