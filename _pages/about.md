@@ -30,7 +30,7 @@ I was fortunate to be advised by [Prof. Yanjiao Chen](https://person.zju.edu.cn/
 
 #### Research Interests
 
-- Machine Learning System
-- Optical Network
-- Congestion Control
+- Host Network Architecture
 - Datacenter Networking
+- Distributed System
+- Edge Computing
