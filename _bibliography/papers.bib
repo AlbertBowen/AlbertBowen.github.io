@@ -7,7 +7,7 @@
   series   = {SIGCOMM 2025},
   title    = {CEIO: A Cache-Efficient Network I/O Architecture for NIC-CPU Data Paths},
   author   = {Liu*, Bowen and Huang*, Xinyang and Li, Qijing and Huang, Zhuobin and Sun, Yijun and Li, Wenxue and Zhang, Junxue and Yin, Ping and Chen, Kai},
-  booktitle  = {ACM SIGCOMM 2025 (SIGCOMM '25)},
+  booktitle  = {39th ACM Special Interest Group on Data Communication},
   address    = {},
   selected = {true},
   abstract = {Efficient Input/Output (I/O) data path between NICs and CPUs/DRAMs is critical for supporting datacenter applications with high-performance network transmission, especially as link speed scales to 100Gbps and beyond. Traditional I/O acceleration strategies, such as Data Direct I/O (DDIO) and Remote Direct Memory Access (RDMA), perform suboptimally due to the inefficient utilization of the Last-Level Cache (LLC). This paper presents CEIO, a novel cache-efficient network I/O architecture that employs proactive rate control and elastic buffering to achieve zero LLC misses in the I/O data path while ensuring the effectiveness of DDIO and RDMA under various network conditions. We have implemented CEIO on commodity SmartNICs and incorporated it into widely-used DPDK and RDMA libraries. Experiments with well-optimized RPC framework and distributed file system under realistic workloads demonstrate that CEIO achieves up to 2.9x higher throughput and 1.9x lower P99.9 latency over prior work.}
@@ -19,10 +19,27 @@
   series   = {SIGCOMM 2025},
   title    = {Revisiting RDMA Reliability for Lossy Fabrics},
   author   = {Li, Wenxue and Liu, Xiangzhou and Zhang, Yunxuan and Wang, Zihao and Gu, Wei and Zeng, Gaoxiong and Ren, Shoushou and Huang, Xinyang and Ren, Zhenghang and Liu, Bowen and Zhang, Junxue and Chen, Kai},
-  booktitle  = {ACM SIGCOMM 2025 (SIGCOMM '25)},
+  booktitle  = {39th ACM Special Interest Group on Data Communication},
   address    = {},
   selected = {true}
 }
+
+
+@inproceedings{flb,
+  abbr      = {ATC},
+  year      = {2025},
+  series    = {ATC 2025},
+  title     = {Enabling Efficient GPU Communication over Multiple NICs with FuseLink},
+  author    = {Hu, Jinbin and Li, Wenxue and Liu, Xiangzhou and Wang, Junfeng and Liu, Bowen and Yin, Ping and Wang, Jianxin and Huang, Jiawei and Chen, Kai},
+  booktitle = {2025 USENIX Annual Technical Conference},
+  address    = {},
+  selected = {true},
+  abstract = {Remote Direct Memory Access (RDMA) over Converged Ethernet (RoCE) cooperating with Priority Flow Control (PFC) has been widely deployed in production datacenters to enable low latency, lossless transmission. At the same time, modern datacenters typically offer parallel transmission paths between any pair of end-hosts, underscoring the importance of load balancing. However, the well-studied load balancing mechanisms designed for lossy datacenter networks (DCNs) are ill-suited for such lossless environments.
+  
+  Through extensive experiments, we are among the first to comprehensively inspect the interactions between PFC and load balancing, and uncover that existing fine-grained rerouting schemes can be counterproductive to spread the congested flows among more paths, further aggravating PFC's head-of-line (HoL) blocking. Motivated by this, we present FLB, a Fine-grained Load Balancing scheme for lossless DCNs. At its core, FLB employs threshold-free rerouting to effectively balance traffic load and improve link utilization during normal conditions and leverages timely congested flow isolation to eliminate HoL blocking on non-congested flows when congestion occurs. We have fully implemented a FLB prototype, and our evaluation results show that FLB reduces PFC PAUSE rate by up to 96% and avoids HoL blocking, translating to up to 45% improvement in goodput over CONGA+DCQCN and 40%, 36%, 29% and 18% reduction in average flow completion time (FCT) over LetFlow+Swift, MP-RDMA, Proteus+DCQCN and LetFlow+PCN, respectively.}
+}
+
+
 
 @inproceedings{carc-apnet,
   abbr     = {APNet},
@@ -36,6 +53,9 @@
   abstract = {Remote Direct Memory Access (RDMA) has become a cornerstone technology in modern datacenter networks due to its high throughput and extremely low latency. However, recent works have revealed that congestion arises in the "last mile" of the RDMA I/O path—--between DRAM and CPU registers--—due to inefficiencies in the memory hierarchy, where severe cache misses and memory bandwidth contention degrade performance. We identify the root cause of this I/O congestion as the speed mismatch between network ingress and CPU processing, which leads to data accumulation and, eventually, Last-Level Cache (LLC) overflow. To address this issue, we propose RhyR, a credit-based rate control mechanism that dynamically aligns network ingress speed with CPU processing speed. Our preliminary evaluation on eRPC over RDMA, a widely used RPC framework, demonstrates that RhyR effectively mitigates I/O congestion, reducing tail latency by up to 1.40x and improving throughput by up to 1.35x compared to prior work.}
 }
 
+
+
+
 @inproceedings{fuseline-osdi,
   abbr      = {OSDI},
   year      = {2025},
@@ -48,3 +68,47 @@
   selected = {true},
   abstract = {Machine learning (ML) clusters stack multiple network interface cards (NICs) within each server to improve GPU communication bandwidth. However, existing systems fall short in fully utilizing NICs because of statically binding GPU traffic to NICs and PCIe bottleneck. This leads to suboptimal performance under imbalanced traffic, such as when GPUs process different LLM serving requests and training models with varying communication pattern. We propose FuseLink to enable efficient GPU communication over multiple NICs. FuseLink extends inter-server network by integrating high-speed intra-server connections, and recognizes GPUs to efficiently relay traffic to idle NICs. We implement FuseLink and integrate it into NCCL, so that ML applications can use FuseLink seamlessly without code modifications. Compared to NCCL with PXN, we verify that FuseLink can achieve 212GBps bandwidth between two inter-server GPUs and bring speedup on producing the first token in LLM model serving by 1.06-2.89, mixture-of-expert (MoE) training by up to 1.3x, and recommendation model training by up to 1.2x.}
 }
+
+
+
+
+
+@article{edge-unlearning,
+  abbr = {S&P},
+  year = {2025},
+  series = {S&P 2025},
+  title={Edge Unlearning is Not" on Edge"! An Adaptive Exact Unlearning System on Resource-Constrained Devices},
+  author={Xia, Xiaoyu and Wang, Ziqi and Sun, Ruoxi and Liu, Bowen and Khalil, Ibrahim and Xue, Minhui},
+  booktitle = {46th IEEE Symposium on Security and Privacy},
+  address = {},
+  selected = {true},
+  abstract={The right to be forgotten mandates that machine learning models enable the erasure of a data owner's data and information from a trained model. Removing data from the dataset alone is inadequate, as machine learning models can memorize information from the training data, increasing the potential privacy risk to users. To address this, multiple machine unlearning techniques have been developed and deployed. Among them, approximate unlearning is a popular solution, but recent studies report that its unlearning effectiveness is not fully guaranteed. Another approach, exact unlearning, tackles this issue by discarding the data and retraining the model from scratch, but at the cost of considerable computational and memory resources. However, not all devices have the capability to perform such retraining. In numerous machine learning applications, such as edge devices, Internet-of-Things (IoT), mobile devices, and satellites, resources are constrained, posing challenges for deploying existing exact unlearning methods. In this study, we propose a Constraint-aware Adaptive Exact Unlearning System at the network Edge (CAUSE), an approach to enabling exact unlearning on resource-constrained devices. Aiming to minimize the retrain overhead by storing sub-models on the resource-constrained device, CAUSE innovatively applies a Fibonacci-based replacement strategy and updates the number of shards adaptively in the user-based data partition process. To further improve the effectiveness of memory usage, CAUSE leverages the advantage of model pruning to save memory via compression with minimal accuracy sacrifice. The experimental results demonstrate that CAUSE significantly outperforms other representative systems in realizing exact unlearning on the resource-constrained device by 9.23%-80.86%, 66.21%-83.46%, and 5.26%-194.13% in terms of unlearning speed, energy consumption, and accuracy.}
+}
+
+@article{edgeshield,
+  abbr = {TMC},
+  year = {2024},
+  series = {TMC 2024},
+  title={EdgeShield: Enabling collaborative DDoS mitigation at the edge},
+  author={Xia, Xiaoyu and Chen, Feifei and He, Qiang and Luo, Ruikun and Liu, Bowen and Chua, Caslon and Buyya, Rajkumar and Yang, Yun},
+  booktitle = {IEEE Transactions on Mobile Computing},
+  address = {},
+  selected = {true},
+  abstract={Edge computing (EC) enables low-latency services by pushing computing resources to the network edge. Due to the geographic distribution and limited capacities of edge servers, EC systems face the challenge of edge distributed denial-of-service (DDoS) attacks. Existing systems designed to fight cloud DDoS attacks cannot mitigate edge DDoS attacks effectively due to new attack characteristics. In addition, those systems are typically activated upon detected attacks, which is not always realistic in EC systems. DDoS mitigation needs to be cohesively integrated with workload migration at the edge to ensure timely responses to edge DDoS attacks. In this paper, we present EdgeShield, a novel DDoS mitigation system that leverages edge servers' computing resources collectively to defend against edge DDoS attacks without the need for attack detection. Aiming to maximize system throughput over time without causing significant service delays, EdgeShield monitors service delays and migrates workloads across an EC system with adaptive mitigation strategies. The experimental results show that EdgeShield significantly outperforms state-of-the-art solutions in both system throughput and service delays.}
+}
+
+
+
+
+@article{EdgeIRS,
+  abbr = {UIC'22 Outstanding Paper Award},
+  year = {2022},
+  series = {UIC 2022},
+  title={An Intelligent Resource Scheduling Method With Edge Channel Deployment for BPM.},
+  author={Liu, Bowen and Dou, Wanchun and Zhou, Xiaokang and Zhang, Xuyun and Qi, Lianyong and Dai, Fei and Chen, Chaochao},
+  booktitle = {19th IEEE International Conference on Ubiquitous Intelligence and Computing},
+  address = {},
+  selected = {true},
+  abstract={Edge computing is a novel computing paradigm that offers kinds of resources at the network edge. In edge computing, terminal users are connected to edge servers via the wireless network and there are various channels in each wireless link. These wireless channels are limited resource while different channel has different cost and service ability. The dynamic changes of users’ status make it harder to find an appropriate method to satisfy the BPM requirements of channel deployment. With this observation, it is a tricky challenge to make a trade-off between the system cost(rental price) and the service ability(number of users). In view of this challenge, an intelligent resource scheduling method, named EdgeIRS, is proposed in this paper. In the technical sense, the EdgeIRS method can accommodate most users at the edge with a minimum cost of deploying channel resources in an online way. Its performance is analyzed theoretically and the experiments verify the superiority of the method.}
+}
+

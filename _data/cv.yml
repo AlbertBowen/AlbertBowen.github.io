@@ -10,19 +10,17 @@
   type: time_table
   contents:
     - title: Ph.D
-      institution: Nanjing University
+      institution: Nanjing University, School of Computer Science and Technology
       year: 2019.9 - 2024.6
       description:
-        - School of Computer Science and Technology.
         - Advised by Prof. Wanchun Dou in LANDS lab.
         - Won Outstanding Graduate of Nanjing University. (南京大学优秀毕业生)
     - title: B.Eng
-      institution: Northeastern University
+      institution: Northeastern University, School of Software
       year: 2015.9 - 2019.6
       description:
-        - School of Software.
+        - National Scholarship. (国家奖学金)
         - Won Outstanding Graduate of Liaoning Province.（辽宁省优秀毕业生）
-        - National Scholarship.
 
 - title: Experience
   type: time_table
@@ -60,10 +58,10 @@
         - TMC Reviewer
         - TDSC Reviewer
         - TCE Reviewer
-        - TCSS Reviewer
     - year: 2024
       items:
-        - ADMA PC Member    
+        - ADMA PC Member  
+        - TCSS Reviewer  
         - JSA Reviewer 
     - year: 2023
       items:
@@ -89,10 +87,14 @@
     - year: 2021
       items:
         - Outstanding Graduate Student, Nanjing University
+        - First-class of Meritocracy Scholarship, Nanjing University
+    - year: 2020
+      items:
+        - HPI Research Institute Outstanding Doctoral Scholarship, Nanjing University
+        - First-class of Meritocracy Scholarship, Nanjing University
     - year: 2019
       items:
-        - Liaoning Province Outstanding graduates, Northeastern University
-        - HPI Research Institute Outstanding Doctoral Scholarship, Nanjing University
+        - Liaoning Province Outstanding Graduates, Northeastern University
     - year: 2018
       items:
         - Outstanding student, Northeastern University 

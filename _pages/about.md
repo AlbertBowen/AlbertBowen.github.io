@@ -3,12 +3,12 @@ layout: about
 title: About
 show_clustrmap: true
 permalink: /
-subtitle: PhD Candidate, HKUST, Hong Kong SAR, China
+subtitle: Postdoc Researcher, HKUST, Hong Kong SAR, China
 
 profile:
   align: right
   image: lbw.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
 
 news: true # includes a list of news items
@@ -17,16 +17,15 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D candidate in [Hong Kong University of Science and Technology (HKUST)](https://www.ust.hk/), advised by [Prof. Kai Chen](http://www.cse.ust.hk/~kaichen/). Before that, I received my B.Eng in Software Engineering in [Wuhan University](https://www.whu.edu.cn/) (Outstanding Graduate) in 2020.
 
-<!-- My research interests include system for LLMs, data center networking, congestion control and distributed system.  -->
+I am Linping YUAN (袁林萍), currently a research assistant professor at the Department of Computer Science and Engineering (CSE), The Hong Kong University of Science and Technology (HKUST). I received my Ph.D. at HKUST VisLab at CSE of HKUST, supervised by Prof. Huamin Qu. Before that, I obtained my bachelor’s degree in Software Engineering from Xi’an Jiaotong University (XJTU) in 2019.
 
-In my research projects, I focus on:
+My research interests lie in the intersection of virtual/augmented reality (VR/AR), human-computer interaction (HCI), and data visualization (VIS). I design and develop algorithms, interactive tools, and visual analytic systems to facilitate the creation of various artifacts, including 2D visualizations and infographics, AR data videos, and VR animated stories. Specifically, my research 1) provides computational creativity support by mining design practices from large datasets with deep learning techniques, and 2) adopts data-driven approach to facilitate creators understand and improve the way audience interact with their artifacts.
 
-- developing application-oriented optimizations for distributed systems, including [Herald](https://xudongliao.github.io/assets/pdf/herald-nsdi24.pdf). These systems are designed to enhance performance by leveraging unique application characteristics, such as utilizing embedding access patterns in DLRM training within Herald.
-- building performant congestion control (CC) schemes using reinforcement learning techniques, including [Astraea](https://xudongliao.github.io/assets/pdf/astraea-eurosys24.pdf), [Spine](https://xudongliao.github.io/assets/pdf/spine-conext22.pdf), [MOCC](https://xudongliao.github.io/assets/pdf/mocc-eurosys22.pdf) and [Jury](https://xudongliao.github.io/assets/pdf/jury-eurosys25.pdf). These initiatives are driven by my goal to make Deep Reinforcement Learning (DRL)-based CC schemes fair, efficient and also practical for real-world deployment.
+Welcome to drop me an email if you are interested in my research or want to explore research collaboration :D
 
-I was fortunate to be advised by [Prof. Yanjiao Chen](https://person.zju.edu.cn/en/0020875) during my time at WHU. Additionally, I am fortunate to collaborate closely with [Prof. Guyue Liu](https://grace-liu.github.io) from Peking University and [Dr. Zhizhen Zhong](https://zhizhenzhong.com/) from MIT on several recent projects.
+
+I am Bowen LIU (刘博文), currently a Postdoc Researcher in [Hong Kong University of Science and Technology (HKUST) iSING Lab](https://ising.cse.ust.hk/), worked with [Prof. Kai Chen](http://www.cse.ust.hk/~kaichen/). I received my Ph.D. in computer science and technology from Nanjing University (NJU), supervised by [Prof. Wanchun Dou](https://cs.nju.edu.cn/douwanchun/index.htm) in [LANDS lab](https://cs.nju.edu.cn/lands/) (Outstanding Graduate) in 2024. Before that, I received my B.Eng from [Northeastern University](https://www.neu.edu.cn/) (Liaoning Province Outstanding Graduate) in 2019.
 
 #### Research Interests
 
@@ -34,3 +33,8 @@ I was fortunate to be advised by [Prof. Yanjiao Chen](https://person.zju.edu.cn/
 - Datacenter Networking
 - Distributed System
 - Edge Computing
+
+
+My research interests lie in building high-performance and intelligent networking systems. I am currently working with [Dr. Xinyang HUANG](https://huangxy-minel.github.io/) on [Axio](https://github.com/axio-project) an open-source framework for accelerated network I/O systems. Axio aims to deliver high-performance, programmable, and extensible network services for datacenter applications. We are always open to discussions and collaborations on research and open-source projects.
+
+
