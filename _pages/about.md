@@ -7,7 +7,7 @@ subtitle: PhD Candidate, HKUST, Hong Kong SAR, China
 
 profile:
   align: right
-  image: xudong.jpg
+  image: lbw.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 
