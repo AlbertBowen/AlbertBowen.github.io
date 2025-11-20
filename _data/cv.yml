@@ -52,10 +52,15 @@
 - title: Academic Services
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - WWW PC Member
+        - EuroSys Shadow PC
     - year: 2025
       items:
         - AAAI PC Member
         - ADMA PC Member 
+        - TC Reviewer
         - TMC Reviewer
         - TDSC Reviewer
         - TCE Reviewer

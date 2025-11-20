@@ -33,7 +33,8 @@ My research interests lie in building high-performance and intelligent networkin
 
 #### Services
 
-- 2025: Program Committee — ADMA; Reviewer — IEEE TMC, IEEE TDSC, IEEE TCE
+- 2026: Program Committee - WWW, EuroSys Shadow PC
+- 2025: Program Committee — AAAI, ADMA; Reviewer — IEEE TMC, IEEE TDSC, IEEE TCE
 - 2024: Program Committee — ADMA; Reviewer — IEEE TCSS, JSA
 - 2023: Workshop Program Committee — ICA3PP
 - 2022: Program Committee — HPCC, UIC
